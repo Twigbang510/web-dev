@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+          <input type="text" class="search-bar" placeholder="Search for...">
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            Zero Team
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <h5>CORE</h5>
+            <span class="material-icons-outlined">av_timer</span> Quản lí sản phẩm
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">av_timer</span> Quản lí người dùng
+          </li>
+          <li class="sidebar-list-item">
+            <h5>INTERFACE</h5>
+            <span class="material-icons-outlined">view_column_2</span> Layouts
+          </li>
+          <li class="sidebar-list-item"> 
+            <span class="material-icons-outlined">auto_stories</span> Pages
+          </li>
+          <li class="sidebar-list-item">
+            <h5>ADDONS</h5>
+            <span class="material-icons-outlined">leaderboard</span> Charts
+          </li>
+          <li class="sidebar-list-item">
+            <span class="material-icons-outlined">table</span> Table
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Quản lí sản phẩm</p>
+        </div>
+        <div class="main-product-create">
+            <button class="create-button" type="button">Create</button>
+        </div>
+        <div class="main-product-manage">
+            <table>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Img</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td>SP1</td>
+                  <td>Áo dài</td>
+                  <td><img class="product-img" src="aodai.jpg" alt=""></td>
+                  <td>120000</td>
+                  <td><button class="setting-btn" type="button"><i class="fa-solid fa-gears"></i></button></td>
+                </tr>
+                <tr>
+                    <td>SP1</td>
+                    <td>Áo dài</td>
+                    <td><img class="product-img" src="aodai.jpg" alt=""></td>
+                    <td>120000</td>
+                    <td><button class="setting-btn" type="button"><i class="fa-solid fa-gears"></i></button></td>
+                </tr>
+                <tr>
+                    <td>SP1</td>
+                    <td>Áo dài</td>
+                    <td><img class="product-img" src="aodai.jpg" alt=""></td>
+                    <td>120000</td>
+                    <td><button class="setting-btn" type="button"><i class="fa-solid fa-gears"></i></button></td>
+                </tr>
+              </table>
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+  </body>
+</html>
